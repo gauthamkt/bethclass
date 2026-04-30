@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.canvas-wrap {
+  border: 4px solid #fff;
+  image-rendering: pixelated;
+  transform: scale(2);
+  position: relative;
+  display: inline-block;
+}
+
+.background-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  image-rendering: pixelated;
+}
+
+.game-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  image-rendering: pixelated;
+}
+
+.hud {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-family: monospace;
+}
+
+.game-over {
+  position: fixed;
+  inset: 0;
+  background: rgba(255,0,0,0.7);
+  display: grid;
+  place-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+@keyframes pulse {
+   0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}

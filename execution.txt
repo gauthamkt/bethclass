@@ -1,0 +1,19 @@
+🔹 STEP 1: Go to Parent Folder
+cd D:\tempprojects
+
+🔹 STEP 2: Create React + Vite Project
+npm create vite@latest bethclass
+
+
+You’ll be asked:
+
+✔ Select a framework: › React
+✔ Select a variant: › JavaScript
+
+
+(Choose React → JavaScript)
+
+🔹 STEP 3: Enter Project & Install
+cd bethclass
+npm install
+npm run dev
