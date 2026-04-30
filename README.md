@@ -1,16 +1,67 @@
-# React + Vite
+# 🎒 BethClass — Pass the Eraser!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**BethClass** is a fun browser-based classroom stealth game built with React + Vite. Help students secretly pass an eraser around the classroom — but watch out for **Beth**, the vigilant teacher who's always keeping an eye out!
 
-Currently, two official plugins are available:
+## 🎮 Play Now
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 **[Play BethClass online](https://gauthamkt.github.io/bethclass/)**
 
-## React Compiler
+No installation needed — just open the link and play!
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🕹️ How to Play
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Students who **need the eraser** are highlighted in the classroom.
+- You control **who passes the eraser** by clicking on a highlighted student.
+- **Beth** cycles through three states:
+  - 🔴 **Watching** — She's looking at the class. Don't throw!
+  - 🟢 **Not Watching** — She's turned away. Your window to pass!
+  - 🟠 **Warning** — She's about to turn back. Be quick!
+- Pass the eraser **only to students who need it** — wrong passes cost you a ❤️.
+- Lose all 3 hearts and it's **CAUGHT!**
+- Complete all levels to win the game! 🎉
+
+---
+
+## 📈 Levels
+
+Each level increases the difficulty — Beth watches more frequently and for longer, so your reaction windows get shorter and shorter. How far can you go?
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 19** + **Vite 7**
+- **HTML5 Canvas** for game rendering
+- Vanilla CSS for styling
+- Deployed via **GitHub Pages**
+
+---
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/gauthamkt/bethclass.git
+cd bethclass
+npm install
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📦 Build & Deploy
+
+```bash
+npm run deploy
+```
+
+This builds the project and publishes it to the `gh-pages` branch automatically.
+
+---
+
+## 📄 License
+
+MIT
